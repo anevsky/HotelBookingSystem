@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" 
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    <tlib-version>1.0</tlib-version>
+    <short-name>ctg</short-name>
+    <uri>/customtags</uri>
+    <tag>
+        <name>freeRoomsList</name>
+        <tag-class>com.alexnevsky.hotel.tags.FreeRoomsListTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>orderId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>customersList</name>
+        <tag-class>com.alexnevsky.hotel.tags.CustomersListTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>billsList</name>
+        <tag-class>com.alexnevsky.hotel.tags.BillsListTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>orderId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>ordersList</name>
+        <tag-class>com.alexnevsky.hotel.tags.OrdersListTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag>
+        <name>ordersCustomerList</name>
+        <tag-class>com.alexnevsky.hotel.tags.OrdersCustomerListTag</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>customerId</name>
+            <required>true</required>
+            <rtexprvalue>true</rtexprvalue>
+        </attribute>
+    </tag>
+    <tag>
+        <name>roomsList</name>
+        <tag-class>com.alexnevsky.hotel.tags.RoomsListTag</tag-class>
+        <body-content>empty</body-content>
+    </tag>
+    <tag-file>
+        <name>copyright</name>
+        <path>/WEB-INF/tags/copyright.tag</path>
+    </tag-file>
+</taglib>

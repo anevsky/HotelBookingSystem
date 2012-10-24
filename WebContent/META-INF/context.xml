@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Context antiJARLocking="true" path="/HotelBookingSystem">
+    <Resource 
+    driverClassName="com.mysql.jdbc.Driver" 
+    maxActive="100" 
+    maxIdle="30" 
+    maxWait="10000" 
+    name="jndi/Hotel" 
+    password="pass" 
+    type="javax.sql.DataSource" 
+    url="jdbc:mysql://localhost:3306/Hotel?useUnicode=true&amp;characterEncoding=UTF8" 
+    username="HotelUser"
+    />
+</Context>

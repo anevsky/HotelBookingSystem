@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE log4j:configuration SYSTEM "log4j.dtd">
+
+<log4j:configuration
+	xmlns:log4j='http://jakarta.apache.org/log4j/'>
+
+    <appender
+		name="HTML-APPENDER"
+		class="org.apache.log4j.RollingFileAppender">
+        <param name="encoding" value="UTF-8" />
+        <param name="file" value="${catalina.home}/logs/Hotel/log.html" />
+        <param name="append" value="false" />
+        <param name="maxBackupIndex" value="5" />
+        <param name="maxFileSize" value="4096KB" />
+        <layout class="org.apache.log4j.HTMLLayout" />
+    </appender>
+	
+    <appender name="LOG-FILE-APPENDER" class="org.apache.log4j.FileAppender">
+        <param name="file" value="${catalina.home}/logs/Hotel/log.log"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ISO8601} %c %n[%p]: '%m' at %l; %n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="ALL" />
+        <appender-ref ref="HTML-APPENDER" />
+        <appender-ref ref="LOG-FILE-APPENDER"/>
+    </root>
+
+</log4j:configuration>

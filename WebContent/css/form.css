@@ -1,0 +1,71 @@
+@charset "utf-8";
+/* CSS Document 
+*/
+
+fieldset
+{
+    background: #eaf2fd;
+    border: 1px solid #781351;
+    width: 450px;
+}
+
+legend
+{
+    color: #fff;
+    background: #ffa20c;
+    border: 1px solid #781351;
+    padding: 2px 6px;
+}
+
+label
+{
+    width: 6em;
+    float: left;
+    text-align: right;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+    display: block;    
+    font-size: 1em;
+    color:darkorchid;
+}
+
+select
+{
+    width: 120px;
+    color: darkblue;
+    background: lightgreen;
+    border: 1px solid #781351;
+}
+
+input
+{
+    width: 120px;
+    color: darkblue;
+    background: lightgreen;
+    border: 1px solid #781351;
+}
+
+.submit input
+{
+    text-align: center;
+    margin-left: 102px;
+    color: #000;
+    background: lightblue;
+    border: 1px outset #781351;
+}
+
+.reset input
+{
+    color: #000;
+    background: lightblue;
+    border: 1px outset #781351;
+}
+
+textarea
+{
+    color: darkblue;
+    background: lightgreen;
+    border: 1px solid #781351;
+    margin-right: 0.5em;
+    padding-right: 0.5em;
+}
